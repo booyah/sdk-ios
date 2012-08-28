@@ -500,11 +500,21 @@ static NSString *sPlayHavenCustomUDID;
 
     if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+
         NSString *requestSignature  = [self requestSignatureFromHttpHeaderFields:[httpResponse allHeaderFields]];
         NSString *nonce             = [self.signedParameters valueForKey:@"nonce"];
         NSString *expectedSignature = [PHAPIRequest expectedSignatureValueForResponse:responseString
                                                                                 nonce:nonce
                                                                                secret:self.secret];
+
+        PH_LOG(@"Request recieved HTTP response: %d", (int)[httpResponse statusCode]);
+    }
+    
+    /* We want to get response objects for everything */
+    [_connectionData release], _connectionData = [[NSMutableData alloc] init];
+    [_response release], _response = nil;
+}
+
 
         if (![expectedSignature isEqualToString:requestSignature]) {
             [self didFailWithError:PHCreateError(PHRequestDigestErrorType)];
