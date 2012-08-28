@@ -277,7 +277,7 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-        PH_LOG(@"Request recieved HTTP response: %d", [httpResponse statusCode]);
+        PH_LOG(@"Request recieved HTTP response: %d", (int)[httpResponse statusCode]);
     }
     
     /* We want to get response objects for everything */
