@@ -59,6 +59,7 @@ NSString *getMACAddress(){
     if (sysctl(mib, 6, buf, &len, NULL, 0) < 0) 
     {
         PH_NOTE(@"Error: sysctl, take 2");
+        free(buf);
         return NULL;
     }
 
