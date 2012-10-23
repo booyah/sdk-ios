@@ -64,7 +64,7 @@ static PHStoreProductViewControllerDelegate *_delegate = nil;
 }
 
 #pragma mark -
-#pragma NSNotification Observers
+#pragma mark NSNotification Observers
 -(void)appDidEnterBackground{
     //This will automatically dismiss the view controller when the app is backgrounded 
     if (_visibleViewController.modalViewController)
