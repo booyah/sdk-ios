@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D118AE5D14B78C3C00C76E2C /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
-		D118AE5F14B7A7FD00C76E2C /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
+		D108A83015A6553700082388 /* PHTimeInGame.h in Headers */ = {isa = PBXBuildFile; fileRef = D108A82E15A6553700082388 /* PHTimeInGame.h */; };
+		D108A83115A6553700082388 /* PHTimeInGame.h in Headers */ = {isa = PBXBuildFile; fileRef = D108A82E15A6553700082388 /* PHTimeInGame.h */; };
+		D108A83215A6553700082388 /* PHTimeInGame.h in Headers */ = {isa = PBXBuildFile; fileRef = D108A82E15A6553700082388 /* PHTimeInGame.h */; };
+		D108A83315A6553700082388 /* PHTimeInGame.h in Headers */ = {isa = PBXBuildFile; fileRef = D108A82E15A6553700082388 /* PHTimeInGame.h */; };
+		D108A83415A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83515A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83615A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83715A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83815A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83915A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83A15A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83B15A6553700082388 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		D108A83E15A6B68600082388 /* PHTimeInGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A83D15A6B68600082388 /* PHTimeInGameTest.m */; };
 		D175008E149193790037A036 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175008D149193790037A036 /* CFNetwork.framework */; };
 		D1BD481B14C0ED3300EE8A5A /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
 		D1BD481C14C0EDC500EE8A5A /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
@@ -19,7 +30,6 @@
 		EA019C8214C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019C8014C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m */; };
 		EA019C8314C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019C8014C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m */; };
 		EA019C8414C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019C8014C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m */; };
-		EA019C8614C102D4008FBCB1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA019C8514C102D4008FBCB1 /* StoreKit.framework */; };
 		EA03810A13B25F4300A31FF7 /* PHPublisherMetadataRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03810913B25F4300A31FF7 /* PHPublisherMetadataRequestTest.m */; };
 		EA03810F13B26A1A00A31FF7 /* PHPublisherMetadataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03810E13B26A1A00A31FF7 /* PHPublisherMetadataRequest.m */; };
 		EA03811313B26FF500A31FF7 /* PHNotificationViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03811213B26FF500A31FF7 /* PHNotificationViewTest.m */; };
@@ -38,6 +48,7 @@
 		EA06AA6B151A812B00C11220 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = EA06AA64151A812B00C11220 /* OpenUDID.m */; };
 		EA06AA6C151A812B00C11220 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = EA06AA64151A812B00C11220 /* OpenUDID.m */; };
 		EA0BB5DF13463C00007F95FA /* PHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0BB5DD13463C00007F95FA /* PHContentView.m */; };
+		EA1146DC15EEAD2100EDB469 /* content-datacollection.json in Resources */ = {isa = PBXBuildFile; fileRef = EA1146DB15EEAD2100EDB469 /* content-datacollection.json */; };
 		EA12ABD51365DBB700CB2F24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		EA12ABD61365DBB700CB2F24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		EA12ABD71365DBB700CB2F24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -72,6 +83,7 @@
 		EA24FCB01554510D0074FC13 /* PHNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA24FCAA1554510D0074FC13 /* PHNetworkUtil.m */; };
 		EA2B07A314E9EBA60087A45F /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2B07A014E9EBA60087A45F /* 512.png */; };
 		EA2B07A614E9EBA60087A45F /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2B07A214E9EBA60087A45F /* 512.png */; };
+		EA2B81AE1613BFE3008D7788 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA019C8514C102D4008FBCB1 /* StoreKit.framework */; };
 		EA328B30151A9D4400DE3CAD /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = EA328B2F151A9D4400DE3CAD /* README.markdown */; };
 		EA328B47151BF68B00DE3CAD /* PublisherOpenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA328B46151BF68B00DE3CAD /* PublisherOpenViewController.xib */; };
 		EA328B48151BF99400DE3CAD /* PublisherOpenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA328B46151BF68B00DE3CAD /* PublisherOpenViewController.xib */; };
@@ -99,14 +111,11 @@
 		EA523D9E1343EEED0057DEA5 /* PHStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA523D901343EE790057DEA5 /* PHStringUtil.m */; };
 		EA523DC51343F9740057DEA5 /* PHAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA523DB21343F7BA0057DEA5 /* PHAPIRequest.m */; };
 		EA5E5C5614C60D570026B3E0 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
-		EA5E5C5714C60D570026B3E0 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EA5E5C5914C60D660026B3E0 /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D111108F14BBC54D0035B39E /* SDURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA5E5C5A14C60D660026B3E0 /* PHUrlPrefetchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA5FA4771542120600F1517A /* PublisherCancelContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FA4761542120600F1517A /* PublisherCancelContentViewController.m */; };
 		EA5FA4781542120600F1517A /* PublisherCancelContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FA4761542120600F1517A /* PublisherCancelContentViewController.m */; };
 		EA5FA4791542120600F1517A /* PublisherCancelContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FA4761542120600F1517A /* PublisherCancelContentViewController.m */; };
 		EA62D65C1579925300B31E62 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
-		EA62D65D1579925300B31E62 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EA62D65E1579925300B31E62 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
 		EA62D65F1579925300B31E62 /* PHPublisherMetadataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03810E13B26A1A00A31FF7 /* PHPublisherMetadataRequest.m */; };
 		EA62D6601579925300B31E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12ABDF1365DBB700CB2F24 /* main.m */; };
@@ -157,7 +166,6 @@
 		EA62D68F1579925300B31E62 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = EACFC89D1500328E007EF54F /* 57.png */; };
 		EA62D6901579925300B31E62 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = EACFC8A0150033A6007EF54F /* 72.png */; };
 		EA62D6911579925300B31E62 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EABC0C75152B8A3200441393 /* Settings.bundle */; };
-		EA62D698157992BE00B31E62 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62D6581579922300B31E62 /* libKIF.a */; };
 		EA6ADFC51475CF3A00DBE60B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABAA6971450ED640040B937 /* SystemConfiguration.framework */; };
 		EA6ADFC81475F22C00DBE60B /* PHPublisherContentRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6ADFC71475F22C00DBE60B /* PHPublisherContentRequestTest.m */; };
 		EA7BC61A13537F8700B4518D /* PHURLLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7BC61813537F8700B4518D /* PHURLLoaderTest.m */; };
@@ -165,7 +173,6 @@
 		EA837E9314EB349A001C8147 /* content-integration.json in Resources */ = {isa = PBXBuildFile; fileRef = EA86C7F914D9EB8600CB1551 /* content-integration.json */; };
 		EA837E9414EB3DF4001C8147 /* content-subcontent.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8C313214DC791B0075B473 /* content-subcontent.json */; };
 		EA86C7BF14D9E75600CB1551 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
-		EA86C7C014D9E75600CB1551 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EA86C7C114D9E75600CB1551 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
 		EA86C7C214D9E75600CB1551 /* PHPublisherMetadataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03810E13B26A1A00A31FF7 /* PHPublisherMetadataRequest.m */; };
 		EA86C7C314D9E75600CB1551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12ABDF1365DBB700CB2F24 /* main.m */; };
@@ -217,6 +224,7 @@
 		EA8A531D15B091AC00E7B3ED /* URLLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8A531915B091AC00E7B3ED /* URLLoaderViewController.xib */; };
 		EA8A6D3414C8C5CA000B86A5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA019C8514C102D4008FBCB1 /* StoreKit.framework */; };
 		EA8C313314DC791B0075B473 /* content-subcontent.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8C313214DC791B0075B473 /* content-subcontent.json */; };
+		EA8F0137161630CA006FB026 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */; };
 		EA9AB62014A3B0AA00079704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		EA9AB63114A3B0D500079704 /* NSObject+QueryComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC53A92134E5F7A00F2F956 /* NSObject+QueryComponents.m */; };
 		EA9AB63314A3B0D500079704 /* UIDevice+HardwareString.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4ABA0F135F859D0062AE77 /* UIDevice+HardwareString.m */; };
@@ -263,7 +271,6 @@
 		EAB44398134554B3000DA3E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		EAB44399134554B3000DA3E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		EAB6A37A14EED62D00EAC692 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
-		EAB6A37B14EED62D00EAC692 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EAB6A37C14EED62D00EAC692 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
 		EAB6A37D14EED62D00EAC692 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44264134539F4000DA3E9 /* SBJsonBase.m */; };
 		EAB6A37E14EED62D00EAC692 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44266134539F4000DA3E9 /* SBJsonParser.m */; };
@@ -308,7 +315,6 @@
 		EAB6A3A714EED62D00EAC692 /* PHReward.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB2B44513CBD172006D2391 /* PHReward.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAB6A3A814EED62D00EAC692 /* PHPublisherOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA523D8D1343EE790057DEA5 /* PHPublisherOpenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAB6A3A914EED62D00EAC692 /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D111108F14BBC54D0035B39E /* SDURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAB6A3AA14EED62D00EAC692 /* PHUrlPrefetchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAB6A3AB14EED62D00EAC692 /* PHPublisherIAPTrackingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA019C7F14C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.h */; };
 		EABAA6981450ED640040B937 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABAA6971450ED640040B937 /* SystemConfiguration.framework */; };
 		EABC0C76152B8A3200441393 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EABC0C75152B8A3200441393 /* Settings.bundle */; };
@@ -324,15 +330,25 @@
 		EAD610F415AC9212001D3E90 /* PHTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD610EC15AC9212001D3E90 /* PHTestController.m */; };
 		EAD610F515AC9212001D3E90 /* PHURLLoader+Automation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD610EE15AC9212001D3E90 /* PHURLLoader+Automation.m */; };
 		EAD610F715AC949C001D3E90 /* zepto.viewportposition.js in Resources */ = {isa = PBXBuildFile; fileRef = EAD610EF15AC9212001D3E90 /* zepto.viewportposition.js */; };
+		EAD8CFDE1607CCA60027F1D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EAD8CFDF1607CCB30027F1D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EAD8CFE01607CCBD0027F1D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EAD8CFE11607CCC70027F1D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EADB57BA16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */; };
+		EADB57BB16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */; };
+		EADB57BC16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */; };
+		EADB57BD16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */; };
+		EADB57BE16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */; };
 		EAE0F5FC1385D1120062B950 /* PHPublisherSubContentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE0F5FB1385D1120062B950 /* PHPublisherSubContentRequest.m */; };
 		EAE0F5FD1385D1120062B950 /* PHPublisherSubContentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE0F5FB1385D1120062B950 /* PHPublisherSubContentRequest.m */; };
+		EAE3A134160BD2990004E563 /* PHTimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D108A82F15A6553700082388 /* PHTimeInGame.m */; };
+		EAE3A135160BD29F0004E563 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5E12D115ED4087002E1AA6 /* libKIF.a */; };
 		EAE5598614F866CA0023BBEF /* PHPublisherIAPTrackingRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE5598514F866CA0023BBEF /* PHPublisherIAPTrackingRequestTest.m */; };
 		EAED51A0134B949D00D0DCB6 /* PHPublisherContentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAED519E134B949D00D0DCB6 /* PHPublisherContentRequest.m */; };
 		EAF168341534E2DE006B6993 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44264134539F4000DA3E9 /* SBJsonBase.m */; };
 		EAF168351534E2DE006B6993 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44266134539F4000DA3E9 /* SBJsonParser.m */; };
 		EAF168361534E2DE006B6993 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44268134539F4000DA3E9 /* SBJsonWriter.m */; };
 		EAF168371534E2DE006B6993 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
-		EAF168381534E2DE006B6993 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EAF168391534E2DE006B6993 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
 		EAF1683A1534E2DE006B6993 /* NSObject+QueryComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC53A92134E5F7A00F2F956 /* NSObject+QueryComponents.m */; };
 		EAF1683B1534E2DE006B6993 /* UIDevice+HardwareString.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4ABA0F135F859D0062AE77 /* UIDevice+HardwareString.m */; };
@@ -371,11 +387,9 @@
 		EAF1685E1534E2DE006B6993 /* PHReward.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB2B44513CBD172006D2391 /* PHReward.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF1685F1534E2DE006B6993 /* PHPublisherOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA523D8D1343EE790057DEA5 /* PHPublisherOpenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF168601534E2DE006B6993 /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D111108F14BBC54D0035B39E /* SDURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAF168611534E2DE006B6993 /* PHUrlPrefetchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF168621534E2DE006B6993 /* PHPublisherIAPTrackingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA019C7F14C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.h */; };
 		EAF168631534E2DE006B6993 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = EA06AA63151A812B00C11220 /* OpenUDID.h */; };
 		EAF1686B1534E34F006B6993 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
-		EAF1686C1534E34F006B6993 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EAF1686D1534E34F006B6993 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
 		EAF1686E1534E34F006B6993 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44264134539F4000DA3E9 /* SBJsonBase.m */; };
 		EAF1686F1534E34F006B6993 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB44266134539F4000DA3E9 /* SBJsonParser.m */; };
@@ -421,11 +435,9 @@
 		EAF168991534E34F006B6993 /* PHReward.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB2B44513CBD172006D2391 /* PHReward.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF1689A1534E34F006B6993 /* PHPublisherOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA523D8D1343EE790057DEA5 /* PHPublisherOpenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF1689B1534E34F006B6993 /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D111108F14BBC54D0035B39E /* SDURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAF1689C1534E34F006B6993 /* PHUrlPrefetchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF1689D1534E34F006B6993 /* PHPublisherIAPTrackingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA019C7F14C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.h */; };
 		EAF1689E1534E34F006B6993 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = EA06AA63151A812B00C11220 /* OpenUDID.h */; };
 		EAF168A51534E59C006B6993 /* PHPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD481914C0CC6300EE8A5A /* PHPurchase.m */; };
-		EAF168A61534E59C006B6993 /* PHUrlPrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */; };
 		EAF168A71534E59C006B6993 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E15B7B14981C39001241EE /* SDURLCache.m */; };
 		EAF168A81534E59C006B6993 /* PHPublisherMetadataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03810E13B26A1A00A31FF7 /* PHPublisherMetadataRequest.m */; };
 		EAF168A91534E59C006B6993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12ABDF1365DBB700CB2F24 /* main.m */; };
@@ -484,14 +496,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA62D6571579922300B31E62 /* PBXContainerItemProxy */ = {
+		EA5E12D015ED4087002E1AA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA62D6501579922300B31E62 /* KIF.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AAB07268139719AC008AF393;
 			remoteInfo = KIF;
 		};
-		EA62D699157992CD00B31E62 /* PBXContainerItemProxy */ = {
+		EAE3A132160BD2830004E563 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA62D6501579922300B31E62 /* KIF.xcodeproj */;
 			proxyType = 1;
@@ -504,9 +516,10 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D108A82E15A6553700082388 /* PHTimeInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHTimeInGame.h; sourceTree = "<group>"; };
+		D108A82F15A6553700082388 /* PHTimeInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHTimeInGame.m; sourceTree = "<group>"; };
+		D108A83D15A6B68600082388 /* PHTimeInGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHTimeInGameTest.m; sourceTree = "<group>"; };
 		D111108F14BBC54D0035B39E /* SDURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLCache.h; sourceTree = "<group>"; };
-		D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHUrlPrefetchOperation.h; sourceTree = "<group>"; };
-		D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHUrlPrefetchOperation.m; sourceTree = "<group>"; };
 		D175008D149193790037A036 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D1BD481814C0CC6300EE8A5A /* PHPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPurchase.h; sourceTree = "<group>"; };
 		D1BD481914C0CC6300EE8A5A /* PHPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPurchase.m; sourceTree = "<group>"; };
@@ -528,6 +541,7 @@
 		EA06AA64151A812B00C11220 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		EA0BB5DC13463C00007F95FA /* PHContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHContentView.h; sourceTree = "<group>"; };
 		EA0BB5DD13463C00007F95FA /* PHContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PHContentView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EA1146DB15EEAD2100EDB469 /* content-datacollection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "content-datacollection.json"; sourceTree = "<group>"; };
 		EA12ABD31365DBB700CB2F24 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA12ABDA1365DBB700CB2F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA12ABDC1365DBB700CB2F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -571,7 +585,7 @@
 		EA5FA4751542120600F1517A /* PublisherCancelContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublisherCancelContentViewController.h; sourceTree = "<group>"; };
 		EA5FA4761542120600F1517A /* PublisherCancelContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublisherCancelContentViewController.m; sourceTree = "<group>"; };
 		EA6031CD1361FFD6007B2BF5 /* PlayHavenSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayHavenSDK.h; sourceTree = "<group>"; };
-		EA62D6501579922300B31E62 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		EA62D6501579922300B31E62 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = ../KIF/KIF.xcodeproj; sourceTree = "<group>"; };
 		EA62D6951579925300B31E62 /* KIFExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6ADFC71475F22C00DBE60B /* PHPublisherContentRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPublisherContentRequestTest.m; sourceTree = "<group>"; };
 		EA7BC61813537F8700B4518D /* PHURLLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHURLLoaderTest.m; sourceTree = "<group>"; };
@@ -631,6 +645,9 @@
 		EAD610ED15AC9212001D3E90 /* PHURLLoader+Automation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHURLLoader+Automation.h"; sourceTree = "<group>"; };
 		EAD610EE15AC9212001D3E90 /* PHURLLoader+Automation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHURLLoader+Automation.m"; sourceTree = "<group>"; };
 		EAD610EF15AC9212001D3E90 /* zepto.viewportposition.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.viewportposition.js; sourceTree = "<group>"; };
+		EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EADB57B816094C7F000433D8 /* PHStoreProductViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHStoreProductViewControllerDelegate.h; sourceTree = "<group>"; };
+		EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHStoreProductViewControllerDelegate.m; sourceTree = "<group>"; };
 		EAE0F5FA1385D1120062B950 /* PHPublisherSubContentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPublisherSubContentRequest.h; sourceTree = "<group>"; };
 		EAE0F5FB1385D1120062B950 /* PHPublisherSubContentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPublisherSubContentRequest.m; sourceTree = "<group>"; };
 		EAE5598514F866CA0023BBEF /* PHPublisherIAPTrackingRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPublisherIAPTrackingRequestTest.m; sourceTree = "<group>"; };
@@ -650,7 +667,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA019C8614C102D4008FBCB1 /* StoreKit.framework in Frameworks */,
+				EAD8CFDE1607CCA60027F1D5 /* AdSupport.framework in Frameworks */,
+				EA2B81AE1613BFE3008D7788 /* StoreKit.framework in Frameworks */,
 				D175008E149193790037A036 /* CFNetwork.framework in Frameworks */,
 				EABAA6981450ED640040B937 /* SystemConfiguration.framework in Frameworks */,
 				EA12ABD51365DBB700CB2F24 /* UIKit.framework in Frameworks */,
@@ -663,6 +681,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8F0137161630CA006FB026 /* AdSupport.framework in Frameworks */,
 				EA8A6D3414C8C5CA000B86A5 /* StoreKit.framework in Frameworks */,
 				EAA547D714BF62AC00254A54 /* CFNetwork.framework in Frameworks */,
 				EA6ADFC51475CF3A00DBE60B /* SystemConfiguration.framework in Frameworks */,
@@ -676,7 +695,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA62D698157992BE00B31E62 /* libKIF.a in Frameworks */,
+				EAE3A135160BD29F0004E563 /* libKIF.a in Frameworks */,
+				EAD8CFDF1607CCB30027F1D5 /* AdSupport.framework in Frameworks */,
 				EA62D6801579925300B31E62 /* StoreKit.framework in Frameworks */,
 				EA62D6811579925300B31E62 /* CFNetwork.framework in Frameworks */,
 				EA62D6821579925300B31E62 /* SystemConfiguration.framework in Frameworks */,
@@ -690,6 +710,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD8CFE01607CCBD0027F1D5 /* AdSupport.framework in Frameworks */,
 				EA86C7DD14D9E75600CB1551 /* StoreKit.framework in Frameworks */,
 				EA86C7DE14D9E75600CB1551 /* CFNetwork.framework in Frameworks */,
 				EA86C7DF14D9E75600CB1551 /* SystemConfiguration.framework in Frameworks */,
@@ -735,6 +756,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD8CFE11607CCC70027F1D5 /* AdSupport.framework in Frameworks */,
 				EAF168C61534E59C006B6993 /* StoreKit.framework in Frameworks */,
 				EAF168C71534E59C006B6993 /* CFNetwork.framework in Frameworks */,
 				EAF168C81534E59C006B6993 /* SystemConfiguration.framework in Frameworks */,
@@ -766,16 +788,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				EA6031CC1361FEE7007B2BF5 /* PlayHaven SDK */,
 				EA328B2F151A9D4400DE3CAD /* README.markdown */,
 				EABC0C87152BD08200441393 /* PlayHaven_SDK_Agreement.rtf */,
-				EA62D6501579922300B31E62 /* KIF.xcodeproj */,
-				EA86C7F014D9E77D00CB1551 /* WaterWorks */,
-				EAD610E215AC9212001D3E90 /* Automated Testing */,
-				EA523D891343EE670057DEA5 /* Unit Testing */,
+				EA6031CC1361FEE7007B2BF5 /* PlayHaven SDK */,
 				EA12ABD81365DBB700CB2F24 /* Example/Debug App */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				EA86C7F014D9E77D00CB1551 /* WaterWorks */,
+				EAD610E215AC9212001D3E90 /* Automated Testing */,
+				EA523D891343EE670057DEA5 /* Unit Testing */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -783,6 +804,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAD8CFDD1607CCA60027F1D5 /* AdSupport.framework */,
 				EA019C8514C102D4008FBCB1 /* StoreKit.framework */,
 				D175008D149193790037A036 /* CFNetwork.framework */,
 				EABAA6971450ED640040B937 /* SystemConfiguration.framework */,
@@ -794,6 +816,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D108A82C15A654FA00082388 /* TimeInGame */ = {
+			isa = PBXGroup;
+			children = (
+				D108A82E15A6553700082388 /* PHTimeInGame.h */,
+				D108A82F15A6553700082388 /* PHTimeInGame.m */,
+			);
+			name = TimeInGame;
+			sourceTree = "<group>";
+		};
 		D1E15B7914981C39001241EE /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,8 +833,6 @@
 				EABC0C7F152BC9E600441393 /* LICENCE */,
 				D111108F14BBC54D0035B39E /* SDURLCache.h */,
 				D1E15B7B14981C39001241EE /* SDURLCache.m */,
-				D118AE5B14B78C3C00C76E2C /* PHUrlPrefetchOperation.h */,
-				D118AE5C14B78C3C00C76E2C /* PHUrlPrefetchOperation.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -932,6 +961,7 @@
 				EAFF5E7C14F8154E00E96C2C /* PHPurchaseTest.m */,
 				EAE5598514F866CA0023BBEF /* PHPublisherIAPTrackingRequestTest.m */,
 				EA7CF59C156C365C0095572E /* PlayHavenTest.m */,
+				D108A83D15A6B68600082388 /* PHTimeInGameTest.m */,
 			);
 			name = "Unit Testing";
 			path = tests;
@@ -968,6 +998,8 @@
 		EA523D941343EE9D0057DEA5 /* Publisher SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EADB57B716094C16000433D8 /* iTunes */,
+				D108A82C15A654FA00082388 /* TimeInGame */,
 				EA019C7E14C0FC16008FBCB1 /* Purchases */,
 				EA03810C13B2630200A31FF7 /* Metadata */,
 				EAB4427913454EB8000DA3E9 /* Content */,
@@ -985,6 +1017,14 @@
 			name = Open;
 			sourceTree = "<group>";
 		};
+		EA5E12CD15ED4087002E1AA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E12D115ED4087002E1AA6 /* libKIF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EA6031CC1361FEE7007B2BF5 /* PlayHaven SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -994,14 +1034,6 @@
 				EA523D8C1343EE790057DEA5 /* src */,
 			);
 			name = "PlayHaven SDK";
-			sourceTree = "<group>";
-		};
-		EA62D6511579922300B31E62 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EA62D6581579922300B31E62 /* libKIF.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EA86C7F014D9E77D00CB1551 /* WaterWorks */ = {
@@ -1014,6 +1046,7 @@
 				EA86C7F714D9EAC800CB1551 /* dev.wwfixtures */,
 				EA8C313214DC791B0075B473 /* content-subcontent.json */,
 				EA86C7F914D9EB8600CB1551 /* content-integration.json */,
+				EA1146DB15EEAD2100EDB469 /* content-datacollection.json */,
 			);
 			path = WaterWorks;
 			sourceTree = "<group>";
@@ -1065,6 +1098,7 @@
 		EAD610E215AC9212001D3E90 /* Automated Testing */ = {
 			isa = PBXGroup;
 			children = (
+				EA62D6501579922300B31E62 /* KIF.xcodeproj */,
 				EAD610E315AC9212001D3E90 /* KIFTestScenario+PHAdditions.h */,
 				EAD610E415AC9212001D3E90 /* KIFTestScenario+PHAdditions.m */,
 				EAD610E515AC9212001D3E90 /* KIFTestStep+PHAdditions.h */,
@@ -1081,6 +1115,15 @@
 			);
 			name = "Automated Testing";
 			path = automation;
+			sourceTree = "<group>";
+		};
+		EADB57B716094C16000433D8 /* iTunes */ = {
+			isa = PBXGroup;
+			children = (
+				EADB57B816094C7F000433D8 /* PHStoreProductViewControllerDelegate.h */,
+				EADB57B916094C7F000433D8 /* PHStoreProductViewControllerDelegate.m */,
+			);
+			name = iTunes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1108,11 +1151,11 @@
 				EA9AB66914A3B2EE00079704 /* PHReward.h in Headers */,
 				EA9AB66B14A3B2EE00079704 /* PHPublisherOpenRequest.h in Headers */,
 				EA5E5C5914C60D660026B3E0 /* SDURLCache.h in Headers */,
-				EA5E5C5A14C60D660026B3E0 /* PHUrlPrefetchOperation.h in Headers */,
 				EA019C8114C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.h in Headers */,
 				EA06AA66151A812B00C11220 /* OpenUDID.h in Headers */,
 				EA24FCAB1554510D0074FC13 /* PHNetworkUtil.h in Headers */,
 				EA451033156298E80095538E /* SDCachedURLResponse.h in Headers */,
+				D108A83015A6553700082388 /* PHTimeInGame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1142,10 +1185,10 @@
 				EAB6A3A714EED62D00EAC692 /* PHReward.h in Headers */,
 				EAB6A3A814EED62D00EAC692 /* PHPublisherOpenRequest.h in Headers */,
 				EAB6A3A914EED62D00EAC692 /* SDURLCache.h in Headers */,
-				EAB6A3AA14EED62D00EAC692 /* PHUrlPrefetchOperation.h in Headers */,
 				EAB6A3AB14EED62D00EAC692 /* PHPublisherIAPTrackingRequest.h in Headers */,
 				EA06AA67151A812B00C11220 /* OpenUDID.h in Headers */,
 				EA451034156298E80095538E /* SDCachedURLResponse.h in Headers */,
+				D108A83115A6553700082388 /* PHTimeInGame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,10 +1214,10 @@
 				EAF1685E1534E2DE006B6993 /* PHReward.h in Headers */,
 				EAF1685F1534E2DE006B6993 /* PHPublisherOpenRequest.h in Headers */,
 				EAF168601534E2DE006B6993 /* SDURLCache.h in Headers */,
-				EAF168611534E2DE006B6993 /* PHUrlPrefetchOperation.h in Headers */,
 				EAF168621534E2DE006B6993 /* PHPublisherIAPTrackingRequest.h in Headers */,
 				EAF168631534E2DE006B6993 /* OpenUDID.h in Headers */,
 				EA451035156298E80095538E /* SDCachedURLResponse.h in Headers */,
+				D108A83215A6553700082388 /* PHTimeInGame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1204,10 +1247,10 @@
 				EAF168991534E34F006B6993 /* PHReward.h in Headers */,
 				EAF1689A1534E34F006B6993 /* PHPublisherOpenRequest.h in Headers */,
 				EAF1689B1534E34F006B6993 /* SDURLCache.h in Headers */,
-				EAF1689C1534E34F006B6993 /* PHUrlPrefetchOperation.h in Headers */,
 				EAF1689D1534E34F006B6993 /* PHPublisherIAPTrackingRequest.h in Headers */,
 				EAF1689E1534E34F006B6993 /* OpenUDID.h in Headers */,
 				EA451036156298E80095538E /* SDCachedURLResponse.h in Headers */,
+				D108A83315A6553700082388 /* PHTimeInGame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1260,7 +1303,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EA62D69A157992CD00B31E62 /* PBXTargetDependency */,
+				EAE3A133160BD2830004E563 /* PBXTargetDependency */,
 			);
 			name = "Example (KIF)";
 			productName = example;
@@ -1375,7 +1418,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "playhaven-sdk-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1392,7 +1435,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EA62D6511579922300B31E62 /* Products */;
+					ProductGroup = EA5E12CD15ED4087002E1AA6 /* Products */;
 					ProjectRef = EA62D6501579922300B31E62 /* KIF.xcodeproj */;
 				},
 			);
@@ -1412,11 +1455,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EA62D6581579922300B31E62 /* libKIF.a */ = {
+		EA5E12D115ED4087002E1AA6 /* libKIF.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libKIF.a;
-			remoteRef = EA62D6571579922300B31E62 /* PBXContainerItemProxy */;
+			remoteRef = EA5E12D015ED4087002E1AA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1488,6 +1531,7 @@
 				EAFF5E7B14F7082800E96C2C /* PublisherIAPTrackingViewController.xib in Resources */,
 				EABC0C77152B8A3200441393 /* Settings.bundle in Resources */,
 				EA8A531C15B091AC00E7B3ED /* URLLoaderViewController.xib in Resources */,
+				EA1146DC15EEAD2100EDB469 /* content-datacollection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1534,7 +1578,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1BD481D14C0EDD100EE8A5A /* PHPurchase.m in Sources */,
-				D118AE5F14B7A7FD00C76E2C /* PHUrlPrefetchOperation.m in Sources */,
 				D1E15B7D14981E90001241EE /* SDURLCache.m in Sources */,
 				EA03811813B272FB00A31FF7 /* PHPublisherMetadataRequest.m in Sources */,
 				EA12ABE01365DBB700CB2F24 /* main.m in Sources */,
@@ -1568,7 +1611,9 @@
 				EA5FA4771542120600F1517A /* PublisherCancelContentViewController.m in Sources */,
 				EA24FCAD1554510D0074FC13 /* PHNetworkUtil.m in Sources */,
 				EA45102C156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83515A6553700082388 /* PHTimeInGame.m in Sources */,
 				EA8A531515B0918B00E7B3ED /* URLLoaderViewController.m in Sources */,
+				EADB57BB16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1603,7 +1648,6 @@
 				EAB2B44713CBD172006D2391 /* PHReward.m in Sources */,
 				EA6ADFC81475F22C00DBE60B /* PHPublisherContentRequestTest.m in Sources */,
 				D1E15B7C14981C39001241EE /* SDURLCache.m in Sources */,
-				D118AE5D14B78C3C00C76E2C /* PHUrlPrefetchOperation.m in Sources */,
 				EA019C8214C0FCE5008FBCB1 /* PHPublisherIAPTrackingRequest.m in Sources */,
 				EAFF5E7D14F8154E00E96C2C /* PHPurchaseTest.m in Sources */,
 				EAE5598614F866CA0023BBEF /* PHPublisherIAPTrackingRequestTest.m in Sources */,
@@ -1612,6 +1656,9 @@
 				EA24FCAC1554510D0074FC13 /* PHNetworkUtil.m in Sources */,
 				EA45102B156298E80095538E /* SDCachedURLResponse.m in Sources */,
 				EA7CF59D156C365C0095572E /* PlayHavenTest.m in Sources */,
+				D108A83415A6553700082388 /* PHTimeInGame.m in Sources */,
+				D108A83E15A6B68600082388 /* PHTimeInGameTest.m in Sources */,
+				EADB57BA16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1619,8 +1666,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE3A134160BD2990004E563 /* PHTimeInGame.m in Sources */,
 				EA62D65C1579925300B31E62 /* PHPurchase.m in Sources */,
-				EA62D65D1579925300B31E62 /* PHUrlPrefetchOperation.m in Sources */,
 				EA62D65E1579925300B31E62 /* SDURLCache.m in Sources */,
 				EA62D65F1579925300B31E62 /* PHPublisherMetadataRequest.m in Sources */,
 				EA62D6601579925300B31E62 /* main.m in Sources */,
@@ -1661,6 +1708,7 @@
 				EAD610F415AC9212001D3E90 /* PHTestController.m in Sources */,
 				EAD610F515AC9212001D3E90 /* PHURLLoader+Automation.m in Sources */,
 				EA8A531615B0918B00E7B3ED /* URLLoaderViewController.m in Sources */,
+				EADB57BC16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1669,7 +1717,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA86C7BF14D9E75600CB1551 /* PHPurchase.m in Sources */,
-				EA86C7C014D9E75600CB1551 /* PHUrlPrefetchOperation.m in Sources */,
 				EA86C7C114D9E75600CB1551 /* SDURLCache.m in Sources */,
 				EA86C7C214D9E75600CB1551 /* PHPublisherMetadataRequest.m in Sources */,
 				EA86C7C314D9E75600CB1551 /* main.m in Sources */,
@@ -1705,7 +1752,9 @@
 				EA5FA4781542120600F1517A /* PublisherCancelContentViewController.m in Sources */,
 				EA24FCAE1554510D0074FC13 /* PHNetworkUtil.m in Sources */,
 				EA45102D156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83615A6553700082388 /* PHTimeInGame.m in Sources */,
 				EA8A531715B0918B00E7B3ED /* URLLoaderViewController.m in Sources */,
+				EADB57BD16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1717,7 +1766,6 @@
 				EAFF5E6D14F6EC8300E96C2C /* SBJsonParser.m in Sources */,
 				EAFF5E6E14F6EC8300E96C2C /* SBJsonWriter.m in Sources */,
 				EA5E5C5614C60D570026B3E0 /* SDURLCache.m in Sources */,
-				EA5E5C5714C60D570026B3E0 /* PHUrlPrefetchOperation.m in Sources */,
 				D1BD481C14C0EDC500EE8A5A /* PHPurchase.m in Sources */,
 				EA9AB63114A3B0D500079704 /* NSObject+QueryComponents.m in Sources */,
 				EA9AB63314A3B0D500079704 /* UIDevice+HardwareString.m in Sources */,
@@ -1739,6 +1787,7 @@
 				EA06AA6B151A812B00C11220 /* OpenUDID.m in Sources */,
 				EA24FCB01554510D0074FC13 /* PHNetworkUtil.m in Sources */,
 				EA45102F156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83815A6553700082388 /* PHTimeInGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1747,7 +1796,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB6A37A14EED62D00EAC692 /* SDURLCache.m in Sources */,
-				EAB6A37B14EED62D00EAC692 /* PHUrlPrefetchOperation.m in Sources */,
 				EAB6A37C14EED62D00EAC692 /* PHPurchase.m in Sources */,
 				EAB6A37D14EED62D00EAC692 /* SBJsonBase.m in Sources */,
 				EAB6A37E14EED62D00EAC692 /* SBJsonParser.m in Sources */,
@@ -1771,6 +1819,7 @@
 				EAB6A39014EED62D00EAC692 /* PHPublisherIAPTrackingRequest.m in Sources */,
 				EA06AA6C151A812B00C11220 /* OpenUDID.m in Sources */,
 				EA451030156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83915A6553700082388 /* PHTimeInGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1782,7 +1831,6 @@
 				EAF168351534E2DE006B6993 /* SBJsonParser.m in Sources */,
 				EAF168361534E2DE006B6993 /* SBJsonWriter.m in Sources */,
 				EAF168371534E2DE006B6993 /* SDURLCache.m in Sources */,
-				EAF168381534E2DE006B6993 /* PHUrlPrefetchOperation.m in Sources */,
 				EAF168391534E2DE006B6993 /* PHPurchase.m in Sources */,
 				EAF1683A1534E2DE006B6993 /* NSObject+QueryComponents.m in Sources */,
 				EAF1683B1534E2DE006B6993 /* UIDevice+HardwareString.m in Sources */,
@@ -1803,6 +1851,7 @@
 				EAF1684A1534E2DE006B6993 /* PHPublisherIAPTrackingRequest.m in Sources */,
 				EAF1684B1534E2DE006B6993 /* OpenUDID.m in Sources */,
 				EA451031156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83A15A6553700082388 /* PHTimeInGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1811,7 +1860,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF1686B1534E34F006B6993 /* SDURLCache.m in Sources */,
-				EAF1686C1534E34F006B6993 /* PHUrlPrefetchOperation.m in Sources */,
 				EAF1686D1534E34F006B6993 /* PHPurchase.m in Sources */,
 				EAF1686E1534E34F006B6993 /* SBJsonBase.m in Sources */,
 				EAF1686F1534E34F006B6993 /* SBJsonParser.m in Sources */,
@@ -1835,6 +1883,7 @@
 				EAF168811534E34F006B6993 /* PHPublisherIAPTrackingRequest.m in Sources */,
 				EAF168821534E34F006B6993 /* OpenUDID.m in Sources */,
 				EA451032156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83B15A6553700082388 /* PHTimeInGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1843,7 +1892,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF168A51534E59C006B6993 /* PHPurchase.m in Sources */,
-				EAF168A61534E59C006B6993 /* PHUrlPrefetchOperation.m in Sources */,
 				EAF168A71534E59C006B6993 /* SDURLCache.m in Sources */,
 				EAF168A81534E59C006B6993 /* PHPublisherMetadataRequest.m in Sources */,
 				EAF168A91534E59C006B6993 /* main.m in Sources */,
@@ -1877,17 +1925,19 @@
 				EA5FA4791542120600F1517A /* PublisherCancelContentViewController.m in Sources */,
 				EA24FCAF1554510D0074FC13 /* PHNetworkUtil.m in Sources */,
 				EA45102E156298E80095538E /* SDCachedURLResponse.m in Sources */,
+				D108A83715A6553700082388 /* PHTimeInGame.m in Sources */,
 				EA8A531815B0918B00E7B3ED /* URLLoaderViewController.m in Sources */,
+				EADB57BE16094C7F000433D8 /* PHStoreProductViewControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EA62D69A157992CD00B31E62 /* PBXTargetDependency */ = {
+		EAE3A133160BD2830004E563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KIF;
-			targetProxy = EA62D699157992CD00B31E62 /* PBXContainerItemProxy */;
+			targetProxy = EAE3A132160BD2830004E563 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1922,7 +1972,10 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1941,7 +1994,10 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -2187,7 +2243,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					"DEBUG=1",
 					"$(inherited)",
 					PH_NAMESPACE_LIBS,
@@ -2213,7 +2268,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PH_NAMESPACE_LIBS,
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					"PH_USE_STOREKIT=1",
 				);
 				GCC_THUMB_SUPPORT = NO;
@@ -2241,7 +2295,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PH_NAMESPACE_LIBS,
 					"PH_USE_STOREKIT=0",
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -2264,7 +2317,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"PH_USE_STOREKIT=0",
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					PH_NAMESPACE_LIBS,
 				);
 				GCC_THUMB_SUPPORT = NO;
@@ -2290,7 +2342,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					"DEBUG=1",
 					"$(inherited)",
 					PH_NAMESPACE_LIBS,
@@ -2347,7 +2398,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PH_NAMESPACE_LIBS,
 					"PH_USE_STOREKIT=0",
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					"DEBUG=1",
 					"$(inherited)",
 					"PH_USE_UNIQUE_IDENTIFIER=0",
@@ -2372,7 +2422,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"PH_USE_STOREKIT=0",
-					PH_DONT_DISMISS_WHEN_BACKGROUNDED,
 					PH_NAMESPACE_LIBS,
 					"PH_USE_MAC_ADDRESS=0",
 					"PH_USE_UNIQUE_IDENTIFIER=0",

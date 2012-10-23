@@ -29,7 +29,7 @@
     if (self.request == nil) {
         [super startRequest];
         
-        [self.placementField resignFirstResponder];
+        //[self.placementField resignFirstResponder];
         
         NSString *placement = (![self.placementField.text isEqualToString:@""])? self.placementField.text : @"more_games";
         PHPublisherContentRequest * request = [PHPublisherContentRequest requestForApp:self.token secret:self.secret placement:placement delegate:self];

@@ -33,6 +33,12 @@
 }
 
 +(id)scenarioToSendContentRequest{
+    /*
+     content type: More Games Widget
+     placement: more_games
+     
+     testing more games content unit with featured game turn on
+    */
     KIFTestScenario *result = [KIFTestScenario scenarioWithDescription:@"Sending a content request..."];
     [result addStepsFromArray:[KIFTestStep stepsToResetApp]];
     [result addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"content"]];
@@ -57,6 +63,12 @@
 }
 
 +(id)scenarioToSendContentRequestTestingReward{
+    /*
+     content type: reward
+     placement: reward
+     
+     testing a reward content unit that rewards item 'delicious_cake'
+    */
     KIFTestScenario *result = [KIFTestScenario scenarioWithDescription:@"Sending a content request and verifying it returns a reward"];
     [result addStepsFromArray:[KIFTestStep stepsToResetApp]];
     [result addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"content"]];
@@ -75,6 +87,13 @@
 }
 
 +(id)scenarioToSendContentRequestTestingAnnouncementLaunch{
+    /* 
+     content type: announcement
+     placement:announcement_launch
+     
+     testing an announcement with custom URL launch set to 'http://www.playhaven.com'
+    */
+     
     KIFTestScenario *result =[KIFTestScenario scenarioWithDescription:@"Sending a content request and testing announcement launch"];
     [result addStepsFromArray:[KIFTestStep stepsToResetApp]];
     [result addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"content"]];
@@ -92,6 +111,10 @@
 }
 
 +(id)scenarioToLoadiTunesAndVerifyReferral{
+    /*
+     just testing the URL loader, no dashboard dependency here
+    */
+    
     KIFTestScenario *result =[KIFTestScenario scenarioWithDescription:@"Loading itunes and verifying referral."];
     [result addStepsFromArray:[KIFTestStep stepsToResetApp]];
     [result addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"url loader"]];

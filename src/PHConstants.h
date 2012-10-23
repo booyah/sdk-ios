@@ -9,7 +9,7 @@
 #import <UIKit/UIImage.h>
 
 // Constants
-#define PH_SDK_VERSION @"1.11.0"
+#define PH_SDK_VERSION @"1.12.1"
 
 #ifndef PH_BASE_URL
 #define PH_BASE_URL @"http://api2.playhaven.com"
@@ -105,15 +105,13 @@
 
 
 // PH_USE_UNIQUE_IDENTIFIER
-// This will lead to rejection from the app store very soon, but will help PlayHaven
-// correlate Apple UDIDs with OpenUDIDs. To disable, set to 0.
+// Sends UDID with each request. To disable, set to 0.
 #ifndef PH_USE_UNIQUE_IDENTIFIER
 #define PH_USE_UNIQUE_IDENTIFIER 1
 #endif
 
 // PH_USE_MAC_ADDRESS
-// This may lead to rejection from the app store at some point, but will help PlayHaven
-// reliably track devices and conversion. To disable, set to 0.
+// Sends the device's MAC address with each request. To disable, set to 0.
 #ifndef PH_USE_MAC_ADDRESS
 #define PH_USE_MAC_ADDRESS 1
 #endif

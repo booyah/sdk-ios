@@ -96,7 +96,7 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
     @synchronized(self){
         if (![session isEqualToString:sPlayHavenSession]) {
             UIPasteboard *pasteboard = [UIPasteboard pasteboardWithName:kSessionPasteboard create:YES];
-            [pasteboard setString:session];
+            [pasteboard setString:(session!= nil)?session:@""];
             [sPlayHavenSession release];
             sPlayHavenSession = (!!session)?[[NSString alloc] initWithString:session]: nil;
         }
@@ -159,14 +159,13 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
 
 -(NSDictionary *) signedParameters{
     if (_signedParameters == nil) {
-
-        //limits the number of preferred languages to 5.
-        NSArray *preferredLanguages = [NSLocale preferredLanguages];
-        if ([preferredLanguages count] > 5) {
-            NSRange range = NSMakeRange(0, 5);
-            preferredLanguages = [preferredLanguages subarrayWithRange:range];
-        }
-
+        CGRect screenBounds = [[UIScreen mainScreen] applicationFrame];
+        BOOL isLandscape = UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]);
+        CGFloat screenWidth = (isLandscape)? CGRectGetHeight(screenBounds) : CGRectGetWidth(screenBounds);
+        CGFloat screenHeight = (!isLandscape)? CGRectGetHeight(screenBounds) : CGRectGetWidth(screenBounds);
+        CGFloat screenScale = [[UIScreen mainScreen] scale];
+        
+        NSString *preferredLanguage = ([[NSLocale preferredLanguages] count] > 0)?[[NSLocale preferredLanguages] objectAtIndex:0]:nil;
         NSMutableDictionary *combinedParams = [[NSMutableDictionary alloc] init];
         
 #if PH_USE_UNIQUE_IDENTIFIER==1
@@ -175,6 +174,19 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
             [combinedParams setValue:device forKey:@"device"];
         }
 #endif
+
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
+        if ([ASIdentifierManager class]) {
+            NSUUID *uuid = [[ASIdentifierManager sharedManager] advertisingIdentifier];
+            NSString *uuidString = [uuid UUIDString];
+            NSNumber *trackingEnabled = [NSNumber numberWithBool:[[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]];
+            [combinedParams setValue:uuidString forKey:@"d_ifa"];
+            [combinedParams setValue:trackingEnabled forKey:@"tracking"];
+        }
+#endif
+#endif
+        
         //This allows for unit testing of request values!
         NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
         
@@ -190,12 +202,15 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
         *os = [NSString stringWithFormat:@"%@ %@",
                [[UIDevice currentDevice] systemName],
                [[UIDevice currentDevice] systemVersion]],
-        *languages = [preferredLanguages componentsJoinedByString:@","];
+        *languages = preferredLanguage;
         if(!appVersion) appVersion = @"NA";
         
         NSNumber 
         *idiom = [NSNumber numberWithInt:(int)UI_USER_INTERFACE_IDIOM()],
-        *connection = [NSNumber numberWithInt:PHNetworkStatus()];
+        *connection = [NSNumber numberWithInt:PHNetworkStatus()],
+        *width = [NSNumber numberWithFloat:screenWidth],
+        *height = [NSNumber numberWithFloat:screenHeight],
+        *scale = [NSNumber numberWithFloat:screenScale];
         
         [combinedParams addEntriesFromDictionary:self.additionalParameters];  
         NSDictionary *signatureParams = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -212,6 +227,9 @@ static NSString *const kSessionPasteboard = @"com.playhaven.session";
                                          languages,@"languages",
                                          session, @"session",
                                          gid, @"gid",
+                                         width, @"width",
+                                         height,@"height",
+                                         scale, @"scale",
                                          nil];
         
         [combinedParams addEntriesFromDictionary:signatureParams];

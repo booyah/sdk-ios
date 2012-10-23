@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <StoreKit/StoreKit.h>
 #import "PHURLLoader.h"
 @class PHContent;
 @class PHContentView;

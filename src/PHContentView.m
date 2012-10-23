@@ -12,8 +12,8 @@
 #import "JSON.h"
 #import "PHConstants.h"
 #import "SDURLCache.h"
-#import "PHUrlPrefetchOperation.h"
 #import "PHPurchase.h"
+#import "PHStoreProductViewControllerDelegate.h"
 
 #define MAX_MARGIN 20
 
@@ -37,10 +37,6 @@
 -(void)resetRedirects;
 -(void)bounceOut;
 -(void)bounceIn;
-
-#pragma mark - Automation Helpers
--(void)_logRedirectForAutomation:(NSString *)urlPath callback:(NSString *)callback;
--(void)_logCallbackForAutomation:(NSString *)callback;
 @end
 
 static NSMutableSet *allContentViews = nil;
@@ -123,9 +119,23 @@ static NSMutableSet *allContentViews = nil;
 #ifndef PH_UNIT_TESTING         
         _webView = [[UIWebView alloc] initWithFrame:CGRectZero];
         _webView.accessibilityLabel = @"content view";
+        
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
+        if ([_webView respondsToSelector:@selector(setSuppressesIncrementalRendering:)])
+            [_webView setSuppressesIncrementalRendering:YES];
+        if ([_webView respondsToSelector:@selector(setKeyboardDisplayRequiresUserAction:)])
+            [_webView setKeyboardDisplayRequiresUserAction:NO];
+#endif
+#endif
+        
         [self addSubview:_webView];
 #endif
+
+
+        
         self.content = content;
+        
     }
     
     return self;
@@ -406,7 +416,7 @@ static NSMutableSet *allContentViews = nil;
     
     PH_LOG(@"Loading content unit template: %@", self.content.URL);
     [_webView loadRequest:[NSURLRequest requestWithURL:self.content.URL
-                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                           cachePolicy:NSURLRequestReturnCacheDataElseLoad
                                        timeoutInterval:PH_REQUEST_TIMEOUT]];
 }
 
@@ -447,7 +457,9 @@ static NSMutableSet *allContentViews = nil;
         NSString *contextString = [queryComponents valueForKey:@"context"];
     
         //Logging for automation, this is a no-op when not automating
-        [self _logRedirectForAutomation:urlPath callback:callback];
+        if ([self respondsToSelector:@selector(_logRedirectForAutomation:callback:)]) {
+            [self performSelector:@selector(_logRedirectForAutomation:callback:) withObject:urlPath withObject:callback];
+        }
         
         PH_SBJSONPARSER_CLASS *parser = [PH_SBJSONPARSER_CLASS new];
         id parserObject = [parser objectWithString:contextString];
@@ -514,7 +526,15 @@ static NSMutableSet *allContentViews = nil;
         PHURLLoader *loader = [[PHURLLoader alloc] init];
         loader.targetURL = [NSURL URLWithString:urlPath];
         loader.delegate = self;
-        loader.context = [NSDictionary dictionaryWithObject:callback forKey:@"callback"];
+        loader.context = [NSDictionary dictionaryWithObjectsAndKeys:
+                          callback,@"callback",
+                          queryComponents,@"queryComponents",
+                          nil];
+#if PH_USE_STOREKIT!=0
+        BOOL shouldUseInternal = [[queryComponents valueForKey:@"in_app_store_enabled"] boolValue] && ([SKStoreProductViewController class] != nil);
+        loader.opensFinalURLOnDevice = !shouldUseInternal;
+#endif  
+        
         [loader open];
         [loader release];
     }
@@ -564,7 +584,9 @@ static NSMutableSet *allContentViews = nil;
     
     
     //log callback for automation, this is no-op outside of automation
-    [self _logCallbackForAutomation:callback];
+    if ([self respondsToSelector:@selector(_logCallbackForAutomation:)]) {
+        [self performSelector:@selector(_logCallbackForAutomation:) withObject:callback];
+    }
     
     if ([callbackResponse isEqualToString:@"OK"]) {
         return YES;
@@ -578,10 +600,21 @@ static NSMutableSet *allContentViews = nil;
 #pragma mark PHURLLoaderDelegate
 -(void)loaderFinished:(PHURLLoader *)loader{
     NSDictionary *contextData = (NSDictionary *)loader.context;
+    NSString *callback = [contextData valueForKey:@"callback"];
+    
     NSDictionary *responseDict = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [loader.targetURL absoluteString], @"url",
                                   nil];
-    [self sendCallback:[contextData valueForKey:@"callback"]
+
+#if PH_USE_STOREKIT!=0
+    NSDictionary *queryComponents = [contextData valueForKey:@"queryComponents"];
+    BOOL shouldUseInternal = [[queryComponents valueForKey:@"in_app_store_enabled"] boolValue] && ([SKStoreProductViewController class] != nil);
+    if (shouldUseInternal) {
+        [[PHStoreProductViewControllerDelegate getDelegate] showProductId:[queryComponents valueForKey:@"application_id"]];
+    }
+#endif
+    
+    [self sendCallback:callback
           withResponse:responseDict 
                  error:nil];
 }
@@ -683,14 +716,4 @@ static NSMutableSet *allContentViews = nil;
     
     [self viewDidDismiss];
 }
-
-
-#pragma mark - Automation Helpers
-/*------------------------------------------------------------------------------
- NOTE: These methods are used for recording redirects and callbacks for 
- automated SDK testing. They have no use in the live SDK.
-------------------------------------------------------------------------------*/
--(void)_logRedirectForAutomation:(NSString *)urlPath callback:(NSString *)callback{ }
--(void)_logCallbackForAutomation:(NSString *)callback{ }
-
 @end

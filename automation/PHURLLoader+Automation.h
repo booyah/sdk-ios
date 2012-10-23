@@ -11,5 +11,5 @@
 @interface PHURLLoader (Automation)
 +(NSURL *)lastLaunchedURL;
 +(void)setLastLaunchedURL:(NSURL *)url;
--(void)_launchURL:(NSURL *)targetURL;
+-(void)_launchURLForAutomation:(NSURL *)targetURL;
 @end

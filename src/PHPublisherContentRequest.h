@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <StoreKit/StoreKit.h>
 #import "PHAPIRequest.h"
 #import "PHContentView.h"
 

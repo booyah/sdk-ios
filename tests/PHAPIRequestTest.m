@@ -21,6 +21,7 @@
 
 @interface PHAPIRequest(Private)
 +(NSMutableSet *)allRequests;
++(void)setSession:(NSString *)session;
 @end
 
 @interface PHAPIRequestTest : SenTestCase @end
@@ -91,6 +92,11 @@
     STAssertFalse([[request.URL absoluteString] rangeOfString:desiredURLString].location == NSNotFound,
                   @"urlPath not present in signed URL!");
     
+}
+
+-(void)testSession{
+    STAssertNoThrow([PHAPIRequest setSession:@"test_session"], @"setting a session shouldn't throw an error");
+    STAssertNoThrow([PHAPIRequest setSession:nil], @"clearing a session shouldn't throw");
 }
 
 @end

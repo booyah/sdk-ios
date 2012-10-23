@@ -7,6 +7,13 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
+#import <AdSupport/AdSupport.h>
+#endif
+#endif
+
 @class PHAPIRequest;
 @protocol PHAPIRequestDelegate <NSObject>
 -(void)request:(PHAPIRequest *)request didSucceedWithResponse:(NSDictionary *)responseData;

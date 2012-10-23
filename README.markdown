@@ -1,4 +1,4 @@
-PlayHaven SDK 1.11.0
+PlayHaven SDK 1.12.1
 ====================
 PlayHaven is a mobile game LTV-maximization platform to help you take control of the business of your games.
 
@@ -8,8 +8,18 @@ An API token and secret is required to use this SDK. These tokens uniquely ident
 
 If you have any questions, visit the [Help Center](http://help.playhaven.com) or contact us at [support@playhaven.com](mailto:support@playhaven.com).  We also recommend reviewing our [Optimization Guides](http://help.playhaven.com/customer/portal/topics/113947-optimization-guides/articles) to learn the best practices and get the most out of your PlayHaven integration.
 
-What's new in 1.11.0
+What's new in 1.12.1
 ====================
+* iOS 6 compatibility improvements
+* In-app iTunes purchases support for content units, see (See note about this feature in the "Links to the App Store" section below.)
+* fixes for crashes affecting devices running iOS versions below 5.0
+
+1.12.0
+======
+* The SDK will now automatically record the number of game sessions and the length of game sessions. This depends on a proper open request implementation. See "Recording game opens" in the "API Reference"
+
+1.11.0
+======
 * App Store launches now properly preserve affiliate link tokens 
 * A change in build settings to remove THUMB instructions from static library builds. This change only affects publishers using this SDK as a static library from the Unity plugin.
 
@@ -53,14 +63,16 @@ If you are using Unity for your game, please integrate the Unity SDK located her
   * CoreGraphics.framework
   * SystemConfiguration.framework
   * CFNetwork.framework
+  * AdSupport.framework
   * StoreKit.framework (**see next bullet**)
 1. (optional) If you are not using StoreKit.framework in your project, you may disable IAP Tracking and VGP by setting the following preproccessor macro in your project or target's Build Settings.
     PH_USE_STOREKIT=0
     This will make it possible to build the SDK without StoreKit linked to your project.
+1. (optional) If your project needs to be compatible with iOS 5.1 - iOS 4.0, make sure set "AdSupport.framework" to "Optional" in the Build Phases' Link Binary With Libraries section for your application's target.
 1. Include the PlayHavenSDK headers in your code wherever you will be using PlayHaven request classes.
 
     \#import "PlayHavenSDK.h"
-1. In your app delegate's -(void)applicationWillEnterForeground:(UIApplication *)application method, record a game open. See the "Recording game opens" section of the API Reference
+1. Send a game open each time a game session starts: when your game is first launched as well as each time it is foregrounded. See the "Recording game opens" section of the API Reference
 1. For each of your placements, you will need to send a content request and implement content request delegate methods. See the "Requesting content for your placements" section of the API Reference
 1. If you are planning on using a More Games Widget in your game, we recommend also implementing a notification view for any placements that you plan on using More Games Widgets with to improve chart opens by up to 300%! See the "Add a Notification View (Notifier Badge)" of the API Reference
 
@@ -72,8 +84,6 @@ This release introduces the use of OpenUDID in addition to our own proprietary i
 NOTE: The "test device" feature of the PlayHaven Dashboard will only work with games that send either OpenUDID or UDIDs.
 
 By default PH_USE_OPENUDID=1 is set, which will send the OpenUDID value for the current device with the open request. If you would like to opt out of OpenUDID collection, set PH_USE_OPENUDID=0 instead. If you opt out of OpenUDID collection, you may also remove the OpenUDID classes from your project.
-
-By default PH_USE_UNIQUE_IDENTIFIER=1 is set, which will send the Apple UDID alongside these new tokens.  It is highly recommended that UDID reporting is enabled to maximize advertising revenue and help map historical device identifiers to new identification methods.  To optionally include an opt out message, view the "User Opt Out" section below.
 
 By default PH_USE_MAC_ADDRESS=1 is set, which will send the device's wifi MAC address alongside these new tokens.
   
@@ -87,7 +97,11 @@ You are responsible for providing an appropriate UI for user opt-out. User data 
 ### Recording game opens
 Your app must report each time your application comes to the foreground. PlayHaven uses these events to measure the click-through rate of your content units to help optimize the performance of your implementation. This request is asynchronous and may run in the background while your game is loading.
 
-The best place to run this code in your app is in the implementation of the UIApplicationDelegate's -(void)applicationWillEnterForeground:(UIApplication *)application method. This will record a game open each time the app is foregrounded. The following will send a request:
+Consider putting an open request in _both_ of these application delegate methods:
+    * -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions This will record a game open when the application is first launched
+    * -(void)applicationWillEnterForeground:(UIApplication *)application This will record a game open each time the app is foregrounded after being launched
+    
+An open request may be sent using the following code:
 
 	[[PHPublisherOpenRequest requestForApp:(NSString *)token secret:(NSString *)secret] send]
 
@@ -206,6 +220,12 @@ The PHPurchase object passed through this method has the following properties:
   * PHPurchaseResolutionBuy - the item was purchased and delivered successfully
   * PHPurchaseResolutionCancel - the user was prompted for an item, but the user elected to not buy it
   * PHPurchaseResolutionError - an error prevented the purchase or delivery of the item
+  
+### Links to the App Store
+As of 1.12.1, links that open in the App Store will instead launch Apple's in-app iTunes view controller as a modal popup. This view controller is independent of any content request so you will not receive delegate events from it.
+
+NOTE: As in-app iTunes purchases follow the same paths as other in-app purchases, you will not be able to test these in-app purchases in non-App Store signed builds. 
+
   
 ### Tracking in-app purchases
 By providing data on your In App Purchases to PlayHaven, you can track your users' overall lifetime value as well as track conversions from your Virtual Goods Promotion content units. This is done using the PHPublisherIAPTrackingRequest class. To report successful purchases use the following either in your SKPaymentQueueObserver instance or after a purchase has been successfully delivered. 

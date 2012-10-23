@@ -22,3 +22,4 @@
 
 http://api2.playhaven.com/v3/publisher/content/?placement_id=integration content-integration.json
 http://api2.playhaven.com/v3/publisher/content/?placement_id=subcontent content-subcontent.json
+http://api2.playhaven.com/v3/publisher/content/?placement_id=data content-datacollection.json

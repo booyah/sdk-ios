@@ -15,7 +15,6 @@
 +(NSMutableSet *)allLoaders;
 -(void)finish;
 -(void)fail;
--(void)_launchURL:(NSURL *)targetURL;
 @end
 
 @implementation PHURLLoader
@@ -118,7 +117,12 @@
         [self invalidate];
         
         if (self.opensFinalURLOnDevice) {
-            [self _launchURL:self.targetURL];
+            // using respondsToSelector to allow functionality to be overriden by Automation
+            if ([self respondsToSelector:@selector(_launchURLForAutomation:)]) {
+                [self performSelector:@selector(_launchURLForAutomation:) withObject:self.targetURL];
+            } else {
+                [[UIApplication sharedApplication] openURL:self.targetURL];
+            }
         }
     } else {
         [self fail];
@@ -166,10 +170,4 @@
         [self fail];
     }
 }
-
-#pragma mark - hidden methods
--(void)_launchURL:(NSURL *)targetURL{
-    [[UIApplication sharedApplication] openURL:targetURL];
-}
-
 @end
