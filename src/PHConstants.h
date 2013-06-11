@@ -21,8 +21,6 @@
 
 #import <UIKit/UIImage.h>
 
-/** @file */
-
 // Constants
 #define PH_SDK_VERSION @"1.13.2"
 
