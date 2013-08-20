@@ -21,6 +21,11 @@
 
 #import <UIKit/UIImage.h>
 
+// BEGIN BOOYAH
+// Turn off UDID usage by PlayHaven.
+#define PH_USE_UNIQUE_IDENTIFIER 0
+// END BOOYAH
+
 // Constants
 #define PH_SDK_VERSION @"1.13.2"
 

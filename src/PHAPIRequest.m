@@ -501,6 +501,7 @@ static NSString *sPlayHavenCustomUDID;
     if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
 
+
         NSString *requestSignature  = [self requestSignatureFromHttpHeaderFields:[httpResponse allHeaderFields]];
         NSString *nonce             = [self.signedParameters valueForKey:@"nonce"];
         NSString *expectedSignature = [PHAPIRequest expectedSignatureValueForResponse:responseString
